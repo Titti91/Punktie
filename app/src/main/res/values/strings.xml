@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Punktie</string>
+    <string name="tab_text_List">Liste</string>
+    <string name="tab_text_Overview">Übersicht</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_calc">hello_calc</string>
+    <string name="hello_overview">hello_overview</string>
+    <string name="tab_text_Calc">Rechner</string>
+    <string name="Kcal">Kcal</string>
+    <string name="Fett">Fett</string>
+    <string name="Punkte">Punkte</string>
+    <string name="Menge">Menge</string>
+    <string name="Hinzufuegen">+</string>
+    <string name="food_item_title">Titel</string>
+    <string name="add_food_item_to_today">Portion zu Tagesverbrauch hinzufügen</string>
+    <string name="edit_current_food_item">Bearbeiten</string>
+    <string name="delete_current_food_item">Löschen</string>
+    <string name="punkte_berechnung_title">Berechne deine Tagespunkte</string>
+    <string name="geschlecht">Geschlecht</string>
+    <string name="maennlich">Männlich</string>
+    <string name="weiblich">Weiblich</string>
+    <string name="alter">Alter</string>
+    <string name="age18">18-20 Jahre</string>
+    <string name="age21">21-35 Jahre</string>
+    <string name="Age36">36-50 Jahre</string>
+    <string name="Age51">51-65 Jahre</string>
+    <string name="Age65">65+ Jahre</string>
+    <string name="gewicht">Gewicht in Kilo</string>
+    <string name="groesse">Größe</string>
+    <string name="unter160">Unter 1.60 Meter</string>
+    <string name="ueber160">Über 1.60 Meter</string>
+    <string name="aktivitaet">Aktivität</string>
+    <string name="meist_sitzend">Meist sitzend</string>
+    <string name="selten_sitzend">Selten sitzend</string>
+    <string name="immer_laufend">Immer laufend</string>
+    <string name="schwerstarbeit">Schwerstarbeit</string>
+    <string name="abnehmen">Abnehmen</string>
+    <string name="gewicht_halten">Gewicht halten</string>
+    <string name="speichern">Speichern</string>
+    <string name="Speichern">Speichern</string>
+    <string name="name">Name</string>
+    <string name="abbrechen">Abbrechen</string>
+    <string name="profil">Profil</string>
+    <string name="test">Test</string>
+    <string name="menge_berechnen">Menge berechnen</string>
+    <string name="suchen">Suchen</string>
+    <string name="zielmenge">Zielmenge</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gramm">Gramm</string>
+    <string name="kiloGramm">Kilogramm</string>
+    <string name="milliliter">Milliliter</string>
+    <string name="liter">Liter</string>
+    <string name="portion">Portion</string>
+
+
+</resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.CalcFragment"
+    android:id="@+id/calcFragment"
+    android:animateLayoutChanges="true">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:isScrollContainer="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:isScrollContainer="false"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:isScrollContainer="false">
+
+                <EditText
+                    android:id="@+id/editTextNumberDecimalKcal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="32dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintStart_toEndOf="@+id/textViewCalcKcal"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewCalcKcal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/Kcal"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextNumberDecimalFett"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintStart_toEndOf="@+id/textViewCalcFett"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalKcal"
+                    android:selectAllOnFocus="true"/>
+
+                <TextView
+                    android:id="@+id/textViewCalcFett"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="28dp"
+                    android:text="@string/Fett"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewCalcKcal" />
+
+                <TextView
+                    android:id="@+id/textViewCalcPunkte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="28dp"
+                    android:text="@string/Punkte"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewCalcMenge" />
+
+                <EditText
+                    android:id="@+id/editTextNumberDecimalPunkte"
+                    android:layout_width="136dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintStart_toEndOf="@+id/textViewCalcPunkte"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalMenge" />
+
+                <TextView
+                    android:id="@+id/textViewCalcMenge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="28dp"
+                    android:text="@string/Menge"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewCalcFett" />
+
+                <EditText
+                    android:id="@+id/editTextNumberDecimalMenge"
+                    android:layout_width="69dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintStart_toEndOf="@+id/textViewCalcMenge"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalFett"
+                    android:selectAllOnFocus="true"/>
+
+                <Spinner
+                    android:id="@+id/spinnerEinheit"
+                    android:layout_width="125dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimalMenge"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalFett" />
+
+                <SeekBar
+                    android:id="@+id/seekBarMenge"
+                    style="@style/Widget.AppCompat.SeekBar"
+                    android:layout_width="221dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:progress="50"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalPunkte" />
+
+                <Button
+                    android:id="@+id/buttonHinzufuegen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:enabled="false"
+                    android:text="@string/Hinzufuegen"
+                    app:layout_constraintStart_toEndOf="@+id/seekBarMenge"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalPunkte" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chart"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:isScrollContainer="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonHinzufuegen"
+                    >
+
+                </com.github.mikephil.charting.charts.PieChart>
+
+                <ImageButton
+                    android:id="@+id/imageButtonSaveFromCalc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_save_24"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimalPunkte"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalMenge" />
+
+                <TextView
+                    android:id="@+id/textViewZielmenge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/zielmenge"
+                    android:textSize="24sp"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalPunkte" />
+
+                <EditText
+                    android:id="@+id/editTextZielmenge"
+                    android:layout_width="112dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:visibility="invisible"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintEnd_toStartOf="@+id/buttonHinzufuegen"
+                    app:layout_constraintStart_toEndOf="@+id/textViewZielmenge"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalPunkte" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

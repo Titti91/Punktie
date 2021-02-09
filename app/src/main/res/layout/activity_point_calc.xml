@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PointCalcActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewPunkteberechnungTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="@string/punkte_berechnung_title"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textViewPunkteBerechnenGeschlecht"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/geschlecht" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMaennlich"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maennlich" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonWeiblich"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weiblich" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewAlter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/alter" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonAge18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age18" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAge21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age21" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAge36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Age36" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAge51"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Age51" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAge65"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Age65" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewGewicht"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/gewicht" />
+
+            <EditText
+                android:id="@+id/editTextGewichtsangabe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:ems="10"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:id="@+id/textViewGroesse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/groesse" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonGroesseUnter160"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unter160" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonGroesseUeber160"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ueber160" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewAktivitaet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/aktivitaet" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMeistSitzend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/meist_sitzend" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSeltenSitzend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selten_sitzend" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonImmerLaufend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/immer_laufend" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSchwerstarbeit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schwerstarbeit" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewAbnehmen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/abnehmen" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonAbnehmen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/abnehmen" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonGewichtHalten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gewicht_halten" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/buttonAngabenBestaetigen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/speichern" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
